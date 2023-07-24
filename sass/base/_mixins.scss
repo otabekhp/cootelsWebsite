@@ -1,0 +1,36 @@
+@mixin flex ($jc:flex-start){
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+@mixin btn {
+    border-radius: 0.4rem;
+    background-color: $btn-bg;
+    color: $third;
+}
+@mixin fontForBtn {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+}
+@mixin paddingForBtn{
+    padding: 1.6rem 3.2rem;
+
+}
+@mixin fontForP {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+   
+}
+@mixin fontForTitle($fs: 3.6rem, $lh: 5.4rem, $fw: 600) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin paddingForSection{
+    padding: 8rem 0;
+}
+@mixin marginForP{
+    margin: 2.4rem 0 3.2rem 0; 
+}

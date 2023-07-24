@@ -1,0 +1,60 @@
+.parent {
+    // border: 2px solid red;
+    @include paddingForSection;
+    .many {
+        // border: 2px solid red;
+        @include flex(center);
+        margin-bottom: 8.8rem;
+
+        h2 {
+            @include fontForTitle;
+            color: $primary_color;
+            text-align: center;
+        }
+
+        p {
+            @include fontForP;
+            @include marginForP;
+            color: $secondary;
+        }
+
+        &__btn {
+            @include flex(center);
+
+            button {
+                @include paddingForBtn;
+                @include btn;
+
+            }
+        }
+
+
+    }
+    .rooms{
+        // border: 2px solid red;
+        @include flex();
+        gap: 2.4rem;
+        &__img{
+            // border: 2px solid blue;
+            width: 50%;
+            img{
+                width: 100%;
+                margin-bottom: 3.2rem;
+            }
+            h3{
+                @include fontForTitle(2.4rem, 3.6rem);
+            }
+            p{
+                @include fontForP;
+                color: $secondary;
+                @include marginForP;
+            }
+            span{
+                @include fontForP;
+                color: #424F7B;
+            }
+        }
+    }
+
+
+}

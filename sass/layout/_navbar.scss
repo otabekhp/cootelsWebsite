@@ -1,0 +1,25 @@
+.nav{
+    // border: 2px solid red;
+    padding: 3.6rem 0;
+    @include flex(space-between);
+    &__logo{
+        @include fontForTitle(3.2rem, 3.9rem);
+        color: $primary_color;
+        font-family: montserrat;
+    }
+    &__menu{
+        @include flex;
+        gap: 3.2rem;
+        @include fontForBtn;
+        a{
+            color: $primary_color;
+        }
+    }
+    &__btn{
+        button {
+            @include btn;
+            @include fontForBtn;
+            @include paddingForBtn;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.hero{
+    // border: 2px solid blue;
+    @include flex;
+    @include paddingForSection;
+    &__info{
+        // border: 2px solid red;
+        width: 50%;
+        h1{
+            @include fontForTitle(4.8rem, 7.2rem);
+            color: $primary_color;
+        }
+        p{
+           @include fontForP;
+           color: $secondary;
+           @include marginForP;
+        }
+        button{
+            @include paddingForBtn;
+            @include btn;
+            @include fontForBtn;
+        }
+    }
+    &__img{
+        //  border: 5px solid blue;
+        @include flex;
+        align-items: start;
+        gap: 2.4rem;
+        width: 50%;
+        img {
+            width: 100%;
+            &:nth-child(2){
+                padding-top: 8.7rem;
+            }
+        }
+    }
+
+}

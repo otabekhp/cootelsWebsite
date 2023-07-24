@@ -1,0 +1,32 @@
+.cozy{
+    // border: 2px solid red;
+    @include paddingForSection;
+    @include flex;
+    gap: 12.6rem;
+    &__img{
+        // border: 2px solid red;
+        width: 30%;
+        img{
+            // border: 2px solid red;
+            width: 100%;
+        }
+    }
+    &__info{
+        // border: 2px solid blue;
+        width: 60%;
+        h2{
+            @include fontForTitle;
+            color: $primary_color;
+        }
+        p{
+            @include fontForP;
+            color: $secondary;
+            @include marginForP;
+        }
+        button{
+            @include fontForBtn;
+            @include paddingForBtn;
+            @include btn;
+        }
+    }
+}

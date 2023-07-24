@@ -1,0 +1,53 @@
+.cabin{
+//    border : 2px solid red;
+    @include paddingForSection;
+    .act{
+        // border: 2px solid blue;
+        @include flex;
+    }
+    &__info{
+        // border: 2px solid green;
+        width: 60%;
+        h2{
+            @include fontForTitle;
+            color: $primary_color;
+        }
+        p{
+            @include fontForP;
+            color: $secondary;
+            @include marginForP;
+        }
+    }
+    &__img{
+        // border: 2px solid red;
+        width: 30%;
+        img{
+            width: 100%;
+        }
+    }
+    .organic{
+        // border: 2px solid red;
+        @include flex;
+        gap: 12.6rem;
+        &__img{
+            // border: 2px solid blue;
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+        &__info{
+            // border: 2px solid green;
+            width: 60%;
+            h2{
+                @include fontForTitle;
+                color: $primary_color;
+            }
+            p{
+                @include fontForP;
+                color: $secondary;
+                @include marginForP;
+            }
+        }
+    }
+}
